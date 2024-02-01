@@ -1,0 +1,200 @@
+/* Paleta de colores para lavado de autos */
+:root {
+    --color-primario: #3498db;  
+    --color-secundario: #2ecc71;  
+    --color-fondo: #ecf0f1; 
+    --color-texto-principal: #333;  
+    --color-texto-secundario: #555;  
+    --color-texto-blanco: #fff;  
+}
+
+/* Estilos generales del body*/
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+}
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: 'Archivo Black', sans-serif;
+    background-color: var(--color-primario);
+    color: var(--color-texto-blanco);
+    margin-bottom: 5px; /* Aumenta el espaciado hacia abajo */
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+header img {
+    width: 350px;
+    height: auto;
+    margin-bottom: 1px;
+    margin-left: 200px; /* Mueve el logo hacia la derecha */
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 110px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+/* Estilos del nav */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    position: relative;
+    background-color: var(--color-secundario);
+}
+
+nav::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: var(--color-secundario);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+nav li a {
+    background-color: var(--color-primario);
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--color-texto-blanco);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    height: 100%; 
+    display: flex;
+    align-items: center; 
+}
+
+/* Cambia el color de fondo al pasar el mouse para dar un efecto de botón */
+nav li a:hover {
+    background-color: #2980b9; /* Azul más oscuro al pasar el mouse */
+}
+/* Cambia el color de fondo al pasar el mouse para dar un efecto de botón */
+nav li a:hover {
+    background-color: #2980b9; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+/* Estilos para cada categoría */
+.category {
+    text-align: center;
+    margin-bottom: 30px;
+    flex: 1 0 100%;
+    background-color: var(--color-fondo);
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px; 
+}
+
+.category h2 {
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--color-texto-principal);
+}
+
+.category p {
+    color: var(--color-texto-secundario);
+}
+
+/* Estilos para cada subcategoría */
+.subcategory-column {
+    flex: 1 0 100%;
+}
+
+.subcategory {
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: var(--color-fondo);
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 8px; 
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); 
+}
+
+.subcategory h3 {
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--color-texto-principal);
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: var(--color-primario);
+    padding: 30px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-texto-blanco);
+    border-top: 2px solid var(--color-secundario);
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* Agrega estilo a los íconos sociales */
+.social-icons {
+    font-size: 24px;
+    margin-top: 20px;
+    display: flex;
+}
+
+/* Ajustes al estilo del texto en el pie de página */
+.footer-info {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.location, .language {
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
+/* Media Query para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    nav li {
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+
+    nav li a {
+        padding: 10px 15px;
+    }
+}

@@ -1,0 +1,174 @@
+/* Paleta de colores para lavado de autos */
+:root {
+    --color-primario: #3498db;  /* Azul principal */
+    --color-secundario: #2ecc71;  /* Verde secundario */
+    --color-fondo: #ecf0f1;  /* Fondo gris claro */
+    --color-texto-principal: #333;  /* Texto principal más oscuro */
+    --color-texto-secundario: #555;  /* Texto secundario más claro */
+    --color-texto-blanco: #fff;  /* Texto en color blanco */
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+}
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: var(--color-primario);
+    color: var(--color-texto-blanco);
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Archivo Black', sans-serif;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    background-color: var(--color-secundario);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+nav li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+nav li a {
+    background-color: var(--color-primario);
+    padding: 12px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--color-texto-blanco);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+nav li a:hover {
+    background-color: rgba(41, 128, 185, 0.9);
+}
+/* Estilos del contenido principal */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Estilos para cada categoría */
+.category {
+    text-align: center;
+    margin-bottom: 30px;
+    flex: 1 0 100%;
+    background-color: var(--color-fondo);
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.category h2 {
+    color: var(--color-texto-principal);
+}
+
+.category p {
+    color: var(--color-texto-secundario);
+}
+
+/* Estilos para cada subcategoría */
+.subcategory-column {
+    flex: 1 0 100%;
+}
+
+.subcategory {
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: var(--color-fondo);
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.subcategory h3 {
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--color-texto-principal);
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: var(--color-primario);
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-texto-blanco);
+    border-top: 2px solid var(--color-secundario);
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* Agrega estilo a los íconos sociales */
+.social-icons {
+    font-size: 24px;
+    margin-top: 20px;
+    display: flex;
+}
+
+/* Ajustes al estilo del texto en el pie de página */
+.footer-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.location, .language {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    nav li {
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+
+    nav li a {
+        padding: 10px 15px;
+    }
+}
