@@ -27,33 +27,39 @@
         </nav>
     </header>
 
-    <main>
+    <main class="grid-container">
         <!-- categorías organizadas HORIZONTAL -->
         
-        <a href="../DESAFIO_1/pages/galeria.html" class="category">
-            <img src="./img/categoria1.jpg" alt="Categoría 1">
-            <h2>ÚLTIMO SERVICIO REALIZADO</h2>
-            <p>Aquí podrás ver fotos e información acerca de nuestro último servicio realizado con éxito...</p>
-        </a>
+        <div class="category">
+            <a href="./pages/galeria.html">
+                <img src="./img/categoria1.jpg" alt="Categoría 1">
+                <h2>ÚLTIMO SERVICIO REALIZADO</h2>
+                <p>Aquí podrás ver fotos e información acerca de nuestro último servicio realizado con éxito...</p>
+            </a>
+        </div>
+    
+        <div class="category">
+            <a href="./pages/haztesocio.html">
+                <img src="./img/categoria2.jpg" alt="Categoría 2">
+                <h2>NUESTROS SOCIOS Y CLIENTES FRECUENTES</h2>
+                <p>Aquí podrás ver fotos e información acerca de nuestros socios más fieles...</p>
+            </a>
+        </div>
+    
+        <div class="category">
+            <a href="./pages/servicios.html">
+                <img src="./img/categoria3.jpg" alt="Categoría 3">
+                <h2>TE GUSTARÍA PROBAR NUESTRO ÚLTIMO SERVICIO?</h2>
+                <p>Aquí podrás ver fotos e información acerca de nuestros próximos servicios y en qué consisten...</p>
+            </a>
+        </div>
 
-        <a href="../DESAFIO_1/pages/haztesocio.html" class="category">
-            <img src="./img/categoria2.jpg" alt="Categoría 2">
-            <h2>NUESTROS SOCIOS Y CLIENTES FRECUENTES</h2>
-            <p>Aquí podrás ver fotos e información acerca de nuestros socios más fieles...</p>
-        </a>
-
-        <a href="../DESAFIO_1/pages/servicios.html" class="category">
-            <img src="./img/categoria3.jpg" alt="Categoría 3">
-            <h2>TE GUSTARÍA PROBAR NUESTRO ÚLTIMO SERVICIO?</h2>
-            <p>Aquí podrás ver fotos e información acerca de nuestros próximos servicios y en qué consisten...</p>
-        </a>
-
-        <!-- Subcategorías organizadas en columnas -->
-
+       <!-- Subcategorías organizadas en columnas -->
+        <div class="subcategory-column">
             <div class="subcategory">
                 <h3>¿QUIÉNES SOMOS?</h3>
             </div>
-       
+
             <div class="subcategory">
                 <h3>LO QUE OFRECEMOS</h3>
             </div>
@@ -61,7 +67,9 @@
             <div class="subcategory">
                 <h3>SERVICIOS</h3>
             </div>
+        </div>
 
+        <div class="subcategory-column">
             <div class="subcategory">
                 <h3>LAVADO</h3>
             </div>
@@ -73,7 +81,9 @@
             <div class="subcategory">
                 <h3>PULIDO</h3>
             </div>
+        </div>
 
+        <div class="subcategory-column">
             <div class="subcategory">
                 <h3>RESERVA</h3>
             </div>
@@ -81,7 +91,7 @@
             <div class="subcategory">
                 <h3>CIUDADES</h3>
             </div>
-
+        </div>
     </main>
 
     <footer>
