@@ -153,7 +153,16 @@ footer {
   header .logo-container img {
       display: none; /* Oculta el logo en dispositivos más pequeños si es necesario */
   }
+  #contacto {
+    display: block;
+    padding: 20px; /* Ajusta el relleno según sea necesario */
+  }
 
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    margin-bottom: 20px; /* Agrega un margen inferior entre las dos secciones */
+  }
   .title {
       font-size: 18px; /* Ajusta el tamaño del texto del título en dispositivos más pequeños */
   }
