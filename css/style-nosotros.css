@@ -96,7 +96,46 @@ footer {
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
-  .navbar-brand img {
-      max-height: 40px; /* Ajuste de tamaño del logo en dispositivos más pequeños */
+  header .logo-container img {
+      display: none; /* Oculta el logo en dispositivos más pequeños si es necesario */
+  }
+
+  .title {
+      font-size: 18px; /* Ajusta el tamaño del texto del título en dispositivos más pequeños */
+  }
+
+
+  header .navbar {
+      display: block; /* Muestra la versión móvil de la navegación */
+      background-color: #000000; /* Ajusta el color de fondo para mejorar la visibilidad */
+  }
+
+  header a {
+      display: block; /* Hace que los elementos de la navegación ocupen el ancho completo */
+      color: white; /* Ajusta el color del texto para mejorar la visibilidad */
+      padding: 10px; /* Ajusta el espaciado interno de los elementos de navegación */
+      text-align: center; /* Centra el texto en dispositivos más pequeños */
+  }
+
+  header a:hover {
+      background-color: #ddd;
+      color: #333;
+  }
+
+  /* Ajusta el tamaño de texto para las categorías en dispositivos móviles */
+  header nav a {
+      font-size: 14px;
+  }
+
+  footer {
+      padding: 10px 0; /* Reduce el espaciado interno en el pie de página para dispositivos más pequeños */
+  }
+
+  .social-icons a {
+      font-size: 30px; /* Ajusta el tamaño de los íconos de redes sociales */
+  }
+
+  .location, .language {
+      margin-bottom: 5px; /* Espaciado inferior en la información del pie de página */
   }
 }
