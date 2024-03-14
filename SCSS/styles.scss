@@ -229,15 +229,15 @@ h1 {
 }
 
 .info-box {
-  @extend .base-box; /* Extendiendo estilos */
+  
   margin-bottom: 20px;
   width: max-content; /* Establece el ancho del contenedor al ancho máximo posible */
   height: max-content; /* Establece la altura del contenedor a la altura máxima posible */
 }
 
 .info-box img {
-  max-width: 100%; /* Asegura que la imagen no sobrepase el ancho del contenedor */
-  height: auto; /* Establece la altura de la imagen como automática para conservar la proporción */
+  max-width: 55%; /* Asegura que la imagen no sobrepase el ancho del contenedor */
+  @extend .base-box; /* Extendiendo estilos */
   margin-bottom: 20px; /* Añade un margen inferior entre la imagen y el texto */
 }
 
