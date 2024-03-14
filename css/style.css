@@ -4,7 +4,7 @@
 /* Mixin para estilos de botón */
 /* Mixin para estilos de caja de información */
 /* Reutilizando estilos con @extend */
-.base-box, .additional-info, .info-box img {
+.base-box, .info-box img {
   border: 1px solid #ccc;
   padding: 15px;
   text-align: center;
@@ -187,8 +187,9 @@ footer {
 
 main {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra horizontalmente */
+  flex-direction: row; /* Cambia la dirección de los elementos a horizontal */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
   text-align: center; /* Centra el texto dentro del contenedor */
 }
 
@@ -201,7 +202,7 @@ h1 {
 }
 
 .info-box {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   width: max-content; /* Establece el ancho del contenedor al ancho máximo posible */
   height: max-content; /* Establece la altura del contenedor a la altura máxima posible */
 }
@@ -218,8 +219,11 @@ h1 {
 }
 
 .additional-info {
-  /* Extendiendo estilos */
-  max-width: 68%; /* Establece el ancho máximo del texto al ancho máximo del contenedor */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Centra el texto dentro del contenedor */
+  max-width: 40%; /* Establece el ancho máximo del texto al ancho máximo del contenedor */
+  margin-right: 200px;
+  font-size: large;
 }
 
 .studio-section {
@@ -298,8 +302,31 @@ button:hover {
     margin-bottom: 20px; /* Añade un margen inferior */
     max-height: 200px; /* Establece la altura máxima de la imagen en dispositivos móviles */
   }
+  .info-box {
+    text-align: center; /* Centra el contenido horizontalmente */
+  }
   .info-box p {
     font-size: 11px;
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  main {
+    flex-direction: column; /* Cambia la dirección del flexbox a columna */
+    align-items: center; /* Centra los elementos */
+  }
+  .additional-info {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center; /* Centra el texto dentro del contenedor */
+    font-size: small;
+    max-width: 80%; /* Define un ancho máximo para el contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    /* Reutilizando estilos */
+  }
+  .h1 {
+    margin-bottom: 150px;
   }
   .studio-image {
     width: 430px;
@@ -371,7 +398,7 @@ button:hover {
   }
   .location,
   .language {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 }
 
