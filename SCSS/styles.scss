@@ -27,6 +27,7 @@
     border: 1px solid #ccc;
     padding: 15px;
     text-align: center;
+    
 }
 
 /* Reutilizando estilos con @extend */
@@ -121,7 +122,9 @@ nav {
     gap: 40px;
     margin: 50px;
 }
-
+.categories-container p{
+    @include text-styles($secondary-color, x-small);
+}
 /* Estilos de cada categoría */
 .category {
     font-family: 'Josefin Sans', sans-serif;
@@ -224,41 +227,40 @@ h1 {
 }
 
 .info-box {
-    margin-bottom: 20px;
-    @extend .base-box; /* Extendiendo estilos */
+  @extend .base-box; /* Extendiendo estilos */
+  margin-bottom: 20px;
+  width: max-content; /* Establece el ancho del contenedor al ancho máximo posible */
+  height: max-content; /* Establece la altura del contenedor a la altura máxima posible */
 }
 
 .info-box img {
-    max-width: 100%; /* Asegura que la imagen no sobrepase el ancho del contenedor */
-    height: auto; /* Establece la altura de la imagen como automática para conservar la proporción */
-    margin-bottom: 20px; /* Añade un margen inferior entre la imagen y el texto */
+  max-width: 100%; /* Asegura que la imagen no sobrepase el ancho del contenedor */
+  height: auto; /* Establece la altura de la imagen como automática para conservar la proporción */
+  margin-bottom: 20px; /* Añade un margen inferior entre la imagen y el texto */
+}
+
+.info-box p {
+  max-width: 100%; /* Establece el ancho máximo del texto al ancho máximo del contenedor */
+  font-size: 16px; /* Ajusta el tamaño de fuente según sea necesario */
 }
 
 .additional-info {
     @extend .base-box; /* Extendiendo estilos */
-    border: 1px solid #ccc; /* Agrega un borde alrededor del elemento */
+    max-width: 68%; /* Establece el ancho máximo del texto al ancho máximo del contenedor */
 }
 
-img {
-    max-width: 100%;
-    height: 500px;
+.studio-section {
+    display: flex;
+    flex-direction: column; /* Establece la dirección de los elementos como columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto dentro del contenedor */
 }
 
 .studio-description h2 {
     margin-bottom: 30px; /* Agrega un margen en la parte inferior del título */
 }
-
-.studio-section {
-    
-    display: flex;
-    flex-direction: column; /* Establece la dirección de los elementos como columna */
-    align-items: center; /* Centra los elementos horizontalmente */
-    text-align: center; /* Centra el texto dentro del contenedor */
-    align-items: center; /* Alinea los elementos en la parte superior del contenedor */
-}
-
 .studio-description {
-    grid-column: 1; /* Ocupa la primera columna */
+    
     @include info-box; /* Reutilizando estilos */
     background-color: #1a1a1a; /* Cambia el color de fondo */
     border: 2px solid $accent-color; /* Añade un borde resaltado */
@@ -269,13 +271,13 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 50%; /* Asegura que la imagen no sobrepase el ancho del contenedor */
-    height: auto; /* Establece la altura de la imagen como automática para conservar la proporción */
-    border: 2px solid $accent-color; /* Añade un borde resaltado */
+    
     img {
-        max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor padre */
+        max-width: 63%; /* Establece el ancho máximo de la imagen al 100% del contenedor padre */
         height: auto; /* Esto asegura que la altura se ajuste automáticamente para mantener la relación de aspecto */
+        border: 2px solid $accent-color; /* Añade un borde resaltado */
     }
+    
 }
 
 input,

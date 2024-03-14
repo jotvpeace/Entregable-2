@@ -94,6 +94,12 @@ nav a:hover {
   margin: 50px;
 }
 
+.categories-container p {
+  color: #ffffff;
+  font-size: x-small;
+  font-weight: normal;
+}
+
 /* Estilos de cada categoría */
 .category {
   font-family: "Josefin Sans", sans-serif;
@@ -194,8 +200,10 @@ h1 {
 }
 
 .info-box {
-  margin-bottom: 20px;
   /* Extendiendo estilos */
+  margin-bottom: 20px;
+  width: max-content; /* Establece el ancho del contenedor al ancho máximo posible */
+  height: max-content; /* Establece la altura del contenedor a la altura máxima posible */
 }
 
 .info-box img {
@@ -204,18 +212,14 @@ h1 {
   margin-bottom: 20px; /* Añade un margen inferior entre la imagen y el texto */
 }
 
+.info-box p {
+  max-width: 100%; /* Establece el ancho máximo del texto al ancho máximo del contenedor */
+  font-size: 16px; /* Ajusta el tamaño de fuente según sea necesario */
+}
+
 .additional-info {
   /* Extendiendo estilos */
-  border: 1px solid #ccc; /* Agrega un borde alrededor del elemento */
-}
-
-img {
-  max-width: 100%;
-  height: 500px;
-}
-
-.studio-description h2 {
-  margin-bottom: 30px; /* Agrega un margen en la parte inferior del título */
+  max-width: 68%; /* Establece el ancho máximo del texto al ancho máximo del contenedor */
 }
 
 .studio-section {
@@ -223,11 +227,13 @@ img {
   flex-direction: column; /* Establece la dirección de los elementos como columna */
   align-items: center; /* Centra los elementos horizontalmente */
   text-align: center; /* Centra el texto dentro del contenedor */
-  align-items: center; /* Alinea los elementos en la parte superior del contenedor */
+}
+
+.studio-description h2 {
+  margin-bottom: 30px; /* Agrega un margen en la parte inferior del título */
 }
 
 .studio-description {
-  grid-column: 1; /* Ocupa la primera columna */
   border: 1px solid #ccc;
   padding: 15px;
   text-align: center;
@@ -241,13 +247,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 50%; /* Asegura que la imagen no sobrepase el ancho del contenedor */
-  height: auto; /* Establece la altura de la imagen como automática para conservar la proporción */
-  border: 2px solid #8a0000; /* Añade un borde resaltado */
 }
 .studio-image img {
-  max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor padre */
+  max-width: 63%; /* Establece el ancho máximo de la imagen al 100% del contenedor padre */
   height: auto; /* Esto asegura que la altura se ajuste automáticamente para mantener la relación de aspecto */
+  border: 2px solid #8a0000; /* Añade un borde resaltado */
 }
 
 input,
