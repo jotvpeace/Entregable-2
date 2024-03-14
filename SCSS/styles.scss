@@ -221,9 +221,11 @@ main {
 
 h1 {
     margin-top:  20px; /* Espacio superior para separarlo del contenido anterior */
-    margin-bottom: 20px; /* Espacio inferior para separarlo del contenido siguiente */
+    margin-bottom: 10px; /* Espacio inferior para separarlo del contenido siguiente */
     align-items: center; /* Centra horizontalmente */
     text-align: center; /* Centra el texto dentro del contenedor */
+    font-size: large;
+    
 }
 
 .info-box {
@@ -311,7 +313,27 @@ button {
     .logo-container .title {
         display: none; /* Oculta el título en tamaños de pantalla móvil */
     }
-
+    .info-box img {
+        max-width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+        height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+        margin-bottom: 20px; /* Añade un margen inferior */
+        max-height: 200px; /* Establece la altura máxima de la imagen en dispositivos móviles */
+    }
+    .info-box p {
+        font-size: 11px;
+        
+    }
+    .studio-image{
+        width: 430px;
+    }
+    .studio-description{
+        font-size: small;
+    }
+    .studio-section{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el tamaño de las columnas según el ancho disponible */
+        margin: 80px; /* Añade un poco de espacio entre las categorías */
+        
+    }
     #contacto {
         display: block;
         padding: 20px; /* Ajusta el relleno según sea necesario */
